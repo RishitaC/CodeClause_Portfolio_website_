@@ -1,0 +1,241 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&family=Lora&family=Montez&family=Sacramento&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #010038;
+  font-family: "Inconsolata", monospace;
+  color: rgb(246, 238, 208);
+  overflow: auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 6vh;
+  width: 100%;
+  background-color: #02014d;
+  position: fixed;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  margin: 1vh;
+}
+
+nav ul li {
+  list-style: none;
+  margin-left: 2vw;
+  margin-right: 2vw;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: rgb(246, 238, 208);
+}
+
+nav ul li a:hover {
+  color: rgb(202, 202, 255);
+}
+.name_logo {
+  font-size: 1.6em;
+}
+
+.sectionOne {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 15vh;
+}
+
+.sectionOne div {
+  width: 30%;
+}
+.sectionLeft img {
+  width: 130%;
+  margin-top: 15vh;
+}
+
+.sectionRight {
+  font-size: 3.6rem;
+  font-family: "Inconsolata", monospace;
+  margin-top: 7.5vh;
+}
+
+.name {
+  color: #205aa6;
+}
+
+.sectionTwo {
+  margin: auto;
+  max-width: 80vw;
+  height: 45vh;
+}
+
+hr {
+  width: 4vw;
+  border-style: dotted none none none;
+  border-width: 0.5vw;
+  margin: auto;
+  margin-bottom: 8vh;
+}
+
+.sectionTwo h1 {
+  font-size: 2rem;
+}
+
+.sectionTwo .lineHorizontal {
+  background: aliceblue;
+  width: 80vw;
+  height: 1.5px;
+  margin: 56px 0;
+  display: flex;
+}
+
+.sectionTwo .linesVertical {
+  height: 3vh;
+  width: 0.01vw;
+  background-color: aliceblue;
+  margin: 0 100px;
+}
+
+.imgTop {
+  width: 2vw;
+  position: relative;
+  top: -32px;
+  left: -14px;
+}
+
+.titleVertical {
+  position: relative;
+  top: -1vh;
+  left: -3vw;
+  width: 10vw;
+  color: rgb(143, 239, 239);
+}
+
+.descVertical {
+  position: relative;
+  top: -0.6vh;
+  left: -2vw;
+  width: 18vw;
+  color: rgb(129, 129, 113);
+  font-size: 80%;
+}
+
+footer {
+  background-color: #01012d;
+  height: 15vh;
+}
+
+.firstFooter {
+  display: flex;
+  padding: 2vh 4vw;
+  justify-content: center;
+}
+
+.secondFooter ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.secondFooter ul li {
+  padding: 0.5vh 1vw;
+  font-size: 1.2rem;
+}
+
+.secondFooter ul li a {
+  text-decoration: none;
+  color: rgb(246, 238, 208);
+}
+.thirdFooter {
+  display: flex;
+  justify-content: center;
+  padding: 2vh;
+  font-size: larger;
+}
+
+.section {
+  padding: 1vh 4vw;
+  height: 85vh;
+}
+.card {
+  margin: 8vh 2vw;
+  width: 25vw;
+  display: inline-flex;
+  background-color: #010038;
+}
+
+.card img {
+  height: 23vh;
+  width: 13vw;
+  border-radius: 5%;
+  margin: 0 2.5vw;
+}
+
+.card-text {
+  margin-top: 1.5vh;
+  color: rgb(246, 238, 208);
+}
+.card-title {
+  color: rgb(246, 238, 208);
+}
+.card-link {
+  text-decoration: none;
+  color: antiquewhite;
+}
+
+@media screen and (max-width: 1440px) {
+  footer {
+    height: 20vh;
+  }
+  nav {
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .sectionRight {
+    font-size: 300%;
+  }
+}
+
+@media (orientation: portrait) {
+  footer {
+    width: 128vw;
+  }
+  nav {
+    height: 10vh;
+  }
+  .sectionRight {
+    margin-top: 15vh;
+    font-size: 200%;
+  }
+
+  hr {
+    width: 0;
+  }
+  .secondFooter ul li {
+    padding: 1vh;
+  }
+  .name_logo {
+    font-size: 120%;
+  }
+
+  .section {
+    height: 100%;
+    width: 100vw;
+  }
+  .card {
+    width: 40vw;
+    flex-flow: column;
+  }
+  .card img {
+    margin: auto;
+  }
+}
